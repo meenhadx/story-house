@@ -17,6 +17,8 @@
     section h2 { border-bottom: 3px solid #1b2a49; display: inline-block; margin-bottom: 20px; }
     .card { background: #fffaf0; border: 1px solid #d9cfb4; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
     .card h3 { margin-bottom: 8px; }
+    .book { display: flex; gap: 16px; align-items: center; }
+    .book svg { flex-shrink: 0; border-radius: 8px; }
     footer { background: #1b2a49; color: #faf3e0; text-align: center; padding: 20px; margin-top: 30px; }
   </style>
 </head>
@@ -57,9 +59,20 @@
 
   <section id="books">
     <h2>আমার বই</h2>
-    <div class="card">
-      <h3>প্রথম বই (লেখা চলছে)</h3>
-      <p>আমার প্রথম বইয়ের কাজ এগিয়ে চলছে। প্রকাশের খবর সবার আগে পাবেন এই ঘরেই।</p>
+    <div class="card book">
+      <svg viewBox="0 0 200 280" width="120" height="168" role="img" aria-label="বইয়ের প্রচ্ছদ">
+        <rect width="200" height="280" rx="8" fill="#1b2a49"/>
+        <rect x="12" y="12" width="176" height="256" rx="4" fill="none" stroke="#d9b44a" stroke-width="2"/>
+        <polygon points="100,70 140,105 60,105" fill="#d9b44a"/>
+        <rect x="68" y="105" width="64" height="50" fill="#faf3e0"/>
+        <rect x="92" y="125" width="16" height="30" fill="#1b2a49"/>
+        <text x="100" y="200" text-anchor="middle" font-size="26" font-weight="bold" fill="#faf3e0">প্রথম বই</text>
+        <text x="100" y="245" text-anchor="middle" font-size="16" fill="#d9b44a">তাহিয়ান</text>
+      </svg>
+      <div>
+        <h3>প্রথম বই (লেখা চলছে)</h3>
+        <p>আমার প্রথম বইয়ের কাজ এগিয়ে চলছে। প্রকাশের খবর সবার আগে পাবেন এই ঘরেই।</p>
+      </div>
     </div>
   </section>
 
